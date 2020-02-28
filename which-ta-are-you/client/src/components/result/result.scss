@@ -1,0 +1,16 @@
+.result {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.result__drumroll {
+    font-size: 2rem;
+}
+
+.result__result {
+    font-size: 12rem;
+}

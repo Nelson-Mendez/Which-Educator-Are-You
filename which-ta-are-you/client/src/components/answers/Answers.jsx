@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import "./answers.scss"
 
 function AnswerOption(props) {
     return (
