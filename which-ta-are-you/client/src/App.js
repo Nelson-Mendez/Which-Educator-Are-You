@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import Home from './pages/home';
+import Quiz from './pages/quiz';
+import Results from '/pages/result';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save ALL OF THIS
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+  render () {
+    return (
+      <BrowserRouter>
+        <Switch>
+          <Route path="/result" component={Results} />
+          <Route path="/quiz" component={Quiz} />
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </BrowserRouter>
+    )
+  }
 }
-
-export default App;
