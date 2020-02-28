@@ -7,7 +7,7 @@ import "./header.scss";
 export default function header() {
     return (
         <header className="header">
-            <Link to="/">
+            <Link to="/" className="header__wrapper">
                 <img className="header__logo" src={logo} alt="" />
             </Link>
         </header>

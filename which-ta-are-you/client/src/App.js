@@ -11,7 +11,6 @@ export default class App extends React.Component {
     return (
       <BrowserRouter>
         <Switch>
-          {/* <Route path="/result" component={Results} /> */}
           <Route path="/quiz" component={Quiz} />
           <Route exact path="/" component={Home} />
         </Switch>
